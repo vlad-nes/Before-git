@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+body {
+    margin: 0;
+    background: white;
+  }
+  
+a {
+    text-decoration: none;
+  }
+  
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+img {
+    vertical-align: top;
+  }
+
+.main {
+    margin: 0 auto;
+    width: 570px;
+    background-image: url(../images/bg-cell.jpg);
+  }
+
+
+
+.text-forms {
+  padding: 12px 130px 30px;  
+  }
+
+.text-forms div {
+  padding-top: 16px;
+}
+
+
+
+.text-field,
+.select-opt {
+  width: 310px;
+  height: 30px;
+  border: 1px solid #c9dce0;
+  border-radius: 8px;
+  padding-left: 9px;
+  font: 12px "HelveticaNeue";
+  color: #437182;
+  outline: 0;
+}
+
+
+.bttn {
+  font: bold 13px "HelveticaNeue";
+  color: #437182;
+  width: 150px;
+  line-height: 2.5;
+  border-radius: 10px;
+  background: #cbeaf2;
+  border: 1px solid #a1c1ca;
+  outline: 0;
+}
+
+

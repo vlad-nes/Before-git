@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: #dfdfdf;
+  min-height: 100vh;
+  font: 13px Arial, Helvetica, sans-serif;
+}
+
+.tabs {
+  width: 520px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.25);
+}
+
+.tabset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #fbfbfb;
+  display: flex;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.tabset li {
+  border-right: 1px solid #e4e4e4;
+}
+
+.tabset a {
+  padding: 24px 25px;
+  color: #444;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tabset a span {
+  position: relative;
+  display: block;
+  margin-right: 6px;
+  width: 10px;
+  height: 10px;
+  background: #444;
+  border-radius: 2px;
+}
+
+.tabset a span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: url(../images/1.svg) center/cover no-repeat;
+  background-color: #fff;
+}
+
+.tab {
+  display: flex;
+  padding: 20px;
+  height: 225px;
+}
+
+.tab-text {
+  padding-right: 30px;
+}
+
+.tabset li a.active {
+  color: #1569ff;
+  border-top: 3px solid #1569ff;
+  background: #fff;
+  box-shadow: 0px 10px 0px 0px rgba(255,255,255,1);
+}
+
+.tabset li a.active span {
+  background: #1569ff;
+}

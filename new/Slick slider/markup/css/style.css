@@ -1,0 +1,168 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+
+/* HEADER STYLE */
+
+header {
+    background:#275d77;    
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo {
+    padding: 23px 10px;    
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.logo li {
+    padding: 0 10px 5px;
+}
+
+.logo li:first-child {
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.menu a {
+    font-size: 14px;
+    padding: 20px;
+}
+
+.logo ul,
+.menu ul{
+    display: flex;
+    line-height: 1.5;
+}
+
+.menu a:hover {
+    color: #275d77;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.menu a:first-child {    
+    position:relative;
+}
+
+.menu a:first-child:after { 
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    width:50%;
+    margin-left:-25%;
+    border-bottom: 1px solid #fff;
+}
+
+
+/* MAIN STYLE */
+
+main {
+    flex: 1 0 auto;    
+}
+
+.wrapper-slider {
+    background: url(../images/bg-slider.png) 100%/cover;
+}
+
+.slider-item {
+    padding: 30px 0 30px 132px;
+    outline: none;
+}
+
+form {
+    outline: none;
+}
+
+.slider-img {
+    float: left;
+}
+
+.slider-text p {
+    background: #fff;
+    color: #275d77;    
+    font-size: 36px;
+    font-weight: lighter;    
+    border-radius: 4px;
+    padding:  40px 30px 40px 230px; 
+    margin: 130px 96px 39px 100px; 
+  }
+
+.slider-text span {
+    color: #919191;
+}
+
+.sl {
+    line-height: 4;
+    padding: 0 45px;
+    margin-left: 80px;
+    background: linear-gradient(to bottom, #f2b783 0%,#e67a26 15%,#d74e0e 100%);
+    border: 1px solid #cb7d4a;
+    border-radius: 4px 0 0 4px;
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.slider-text .sl::after {
+    content: ">";
+    position: absolute;
+    background: linear-gradient(to bottom, #f2b783 0%,#e67a26 15%,#d74e0e 100%);
+    border: 1px solid #c87a47;
+    border-radius: 0 4px 4px 0;
+    padding: 0 30px;
+    top: -1px;
+    left: 100%;
+    margin-left: 3px;
+  
+  
+  }
+
+/* FOOTER STYLE */
+
+.footer {
+    background: #275d77;
+    flex-shrink: 0;
+}

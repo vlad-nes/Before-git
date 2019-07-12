@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: grey;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}

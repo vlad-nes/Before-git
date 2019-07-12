@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+  
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+body {
+    margin: 0;
+    background: #f9f6ea;
+    font: 11px Arial, Helvetica, sans-serif;
+    
+}
+
+.main div {
+    border: 2px solid black;
+}
+
+.main {
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    align-items: center;
+}
+
+
+
+.right {
+    flex-direction: column;
+    justify-content: space-around;
+
+    /* align-items: center; */
+}
+
+.left,
+.right {
+    display: flex;
+    width: 350px;
+    height: 600px;    
+    
+}
+
+.one,
+.two,
+.three,
+.four {
+    width: 100px;
+    height: 100px; 
+}

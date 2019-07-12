@@ -1,0 +1,410 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font: 12px Georgia, "Times New Roman", serif;
+    color: #8b8b8b;
+}
+
+a {
+    color: #b86365;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding-top: 8px;
+    background: #8e8f8a;
+}
+
+.header-top {
+    padding: 15px 0;
+    background: #e0dfda;
+    color: #666;
+    font-size: 0;
+}
+
+.header-top .container,
+.header-bottom .container {
+    text-align: justify;
+}
+
+.header-top .container::after,
+.header-bottom .container::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.header-contacts,
+.search,
+.logo,
+.menu {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-contacts li {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.header-contacts li:last-child {
+    padding-left: 6px;
+}
+
+.header-contacts li:first-child::after {
+    content: '|';
+    margin-left: 6px;
+}
+
+.header-contacts a {
+    color: inherit;
+}
+
+.search {
+    position: relative;
+}
+
+.search::after {
+    content: '';
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    margin-top: -9px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/icon-search.png) no-repeat;
+}
+
+.search input {
+    width: 210px;
+    padding: 5px 10px;
+    background: #c0beb6;
+    border: 0;
+    border-radius: 10px/50%;
+}
+
+.header-bottom {
+    padding: 34px 0;
+    background: #d9d8d3;
+    font-size: 0;
+}
+
+.logo a {
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-style: italic;
+    color: #505050;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.menu {
+    background: #4b4b4b;
+    color: #828282;
+    border-radius: 20px/50%;
+}
+
+.menu ul {
+    padding: 17px 25px;
+    font-size: 0;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.menu li:not(:last-child) {
+    position: relative;
+    margin-right: 40px;
+}
+
+.menu li:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: -21px;
+    top: 50%;
+    transform: translateY(-55%);
+}
+
+.menu a {
+    color: inherit;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+/* Styles for Intro section */
+.intro {
+    padding: 50px 0;
+    display: table;
+}
+
+.intro-img,
+.intro-text {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.intro-text {
+    padding-left: 30px;
+    padding-bottom: 35px;
+    text-align: right;
+}
+
+.intro-text h2,
+.intro-text p {
+    text-align: left;
+}
+
+.intro-text h2 {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: normal;
+    color: #505050;
+}
+
+.intro-text p {
+    line-height: 1.6;
+}
+
+.intro-text a {
+    font-weight: bold;
+}
+
+
+/* Shout section */
+.shout {
+    position: relative;
+    padding: 25px 0;
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+}
+
+.shout::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent 1%,#d5d5d5 51%, transparent 100%);
+}
+.shout::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent 1%,#d5d5d5 51%, transparent 100%);
+}
+
+.shout blockquote {
+    position: relative;
+    margin: 0;
+    padding: 0 124px;
+}
+
+.shout blockquote::before,
+.shout blockquote::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 63px;
+}
+
+.shout blockquote::before {
+    left: 30px;
+    background: url(../images/arrow-left.png) no-repeat;
+}
+
+.shout blockquote::after {
+    right: 30px;
+    background: url(../images/arrow-right.png) no-repeat;
+}
+
+/* Content section */
+.content {
+    overflow: hidden;
+    padding: 45px 0;
+}
+
+.content-item {
+    float: left;
+    width: 31%;
+}
+
+.content-item:nth-child(2) {
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+.content-item h3 {
+    margin: 0 auto 10px;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #505050;
+}
+
+.content-item img {
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+.content-item p {
+    margin: 0 0 14px;
+    letter-spacing: 1px; 
+}
+
+.content-item a {
+    font-weight: bold;
+}
+
+/* Footer styles */
+.footer {
+    border-top: 2px solid #8e8f8a;
+    background: #d1cfc9;
+}
+
+.footer-top {
+    padding: 30px 0;
+}
+
+.footer-top .container {
+    overflow: hidden;
+}
+
+.footer-top h3 {
+    margin: 0 0 30px;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: italic;
+    color: #505050;
+}
+
+.footer-about {
+    width: 46%;
+    float: left;
+    margin-right: 4%;
+}
+
+.footer-about-item {
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.footer-about-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.footer-about-item img {
+    float: right;
+    margin-right: 20px;
+}
+
+.footer-about-item h4 {
+    margin: 5px 0 15px;
+    font-size: 16px;
+    color: #505050;
+}
+
+.footer-contact {
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+}
+
+.footer-contact input,
+.footer-contact textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-family: inherit;
+    background: #c7c5bc;
+    color: inherit;
+    border: 0;
+    border-radius: 3px;
+}
+
+.footer-contact button {
+    padding: 11px;
+    color: #b86365;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: inherit;
+    text-transform: uppercase
+}
+
+.footer-links {
+    float: left;
+    width: 23%;
+}
+
+.footer-links li {
+    padding: 5px 0;
+    border-bottom: 1px solid #c0bfb9;
+}
+
+.copyright {
+    padding: 25px 0;
+    background: #4b4b4b;
+    color: #919191;
+}
+
+.copyright .container {
+    text-align: justify;
+    font-size: 0;
+}
+
+.copyright .container::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.copyright p {
+    margin: 0;
+    display: inline-block;
+    font-size: 12px;
+}
